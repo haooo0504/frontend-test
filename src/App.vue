@@ -1,3 +1,9 @@
+<script setup>
+import TopNav from './components/top-nav.vue'
+</script>
 <template>
-  <router-view></router-view>
+  <div>
+    <TopNav />
+    <router-view />
+  </div>
 </template>
