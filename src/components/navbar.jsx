@@ -12,4 +12,4 @@ export const Navbar = () => {
       </div>
     </header>
   );
-};
+}; //
