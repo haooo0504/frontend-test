@@ -1,3 +1,7 @@
+"use client";
+
+import { useCartStore } from "../stores/cart";
+
 export const Navbar = () => {
     return (
         <header>
@@ -6,7 +10,7 @@ export const Navbar = () => {
                 <a href="/cart" className="tw-relative">
                     購物車
                     <div className="tw-absolute tw-top-[-4px] tw-right-[-10px] tw-text-xs tw-w-4 tw-h-4 tw-rounded-full tw-bg-red-500 tw-flex tw-items-center tw-justify-center">
-                        <span>3</span>
+                        <span>{useCartStore().count()}</span>
                     </div>
                 </a>
             </div>
