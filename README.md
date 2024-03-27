@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+請使用前端框架及狀態管理工具完成以下功能。(๑•̀ㅂ•́)و✧
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 商品列表
 
-Currently, two official plugins are available:
+功能說明：
+1. 完成商品列表版面。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+	圖片: https://picsum.photos/500/500
 
-## Expanding the ESLint configuration
+	Tab Type:
+		1:單人房 2:雙人房 3:四人房
+		4:海景房 5:山景房 6:市景房
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+	### mobile:
+	![sm](https://i.imgur.com/yqIR55T.png)
+	![md](https://i.imgur.com/jYG7Ba9.png)
+	### pc:
+	![lg](https://i.imgur.com/nlUvULI.png)
 
-- Configure the top-level `parserOptions` property like this:
+2. 點擊Tab選染出指定分類商品。
+3. 點擊新增商品，新增商品至購物車內，並更新導覽列購物車數量。
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<br/>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 購物車
+
+功能說明：
+1. 取得加入購物車的商品資料，並渲染至畫面。
+2. 計算總項目數、總金額。
+3. 點擊刪除按鈕，刪除購物車內商品，並更新導覽列購物車數量。
+4. 點擊成立訂單時，印出購物車內所有已選取商品。資料格式如下：
+
+	```
+	params: [
+		{
+			"id": 1, // 商品id
+			"price": 500, // 單一商品價格
+			"qty": 1 // 購買數量
+		},
+		{
+			"id": 2,
+			"price": 750,
+			"qty": 2
+		}
+	]
+	```
+
+<br/>
+
+## 導覽列
+
+功能說明：
+1. 導覽列內購物車數量同步實際加入購物車商品數量(包含未選取項目)
