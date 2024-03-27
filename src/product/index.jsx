@@ -4,10 +4,10 @@ import { Tab } from "./tab";
 export default function Product() {
   return (
     <>
-      <div class="tw-p-4">
+      <div className="tw-p-4">
         <Tab />
       </div>
-      <section class="tw-p-4">
+      <section className="tw-p-4">
         <div>
           <Item />
           <Item />
