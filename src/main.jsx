@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import Product from "./product";
-import Cart from "./cart";
+import Product from "./routes/product";
+import Cart from "./routes/cart";
 import { Navbar } from "./components/navbar";
 
 const router = createBrowserRouter([
