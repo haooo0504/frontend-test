@@ -19,10 +19,10 @@
 		4:海景房 5:山景房 6:市景房
 
 	### mobile:
-	![sm](/images/sm.png)
-	![md](/images/md.png)
+	![sm](https://i.imgur.com/yqIR55T.png)
+	![md](https://i.imgur.com/jYG7Ba9.png)
 	### pc:
-	![lg](/images/lg.png)
+	![lg](https://i.imgur.com/nlUvULI.png)
 
 2. 點擊Tab選染出指定分類商品。
 3. 點擊新增商品，新增商品至購物車內，並更新導覽列購物車數量。
